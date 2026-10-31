@@ -97,8 +97,17 @@
   "implementation_package_version_retained": "0.32.0",
   "release_identity": "V4 direct-original-blocks graph (derived from exact 0.32.0)",
   "author_and_affiliation_pending_human_confirmation": false,
-  "public_repository_and_commit_pending": true,
+  "public_repository_and_commit_pending": false,
   "submitter_author": "余付",
   "submitter_organization": "DataSpot",
-  "public_repository": "https://github.com/AmlSsu/travor-dip-memory"
+  "public_repository": "https://github.com/AmlSsu/travor-dip-memory",
+  "implementation_parent_commit": "b8a88b95a67e95ce5b9281eb16648baabccde912",
+  "proposed_Full_options": {
+    "max_add_concurrency": 1,
+    "search_concurrency": 1,
+    "top_k": 100
+  },
+  "registered_version_id": "version_2b209886a6d2",
+  "registered_version_name": "0.32.0-placeholder",
+  "actual_method": "direct-original-blocks-graph-v4"
 }
