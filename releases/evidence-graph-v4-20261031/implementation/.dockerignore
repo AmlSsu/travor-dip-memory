@@ -1,0 +1,11 @@
+runs
+tests
+__pycache__
+*.zip
+*.sqlite3*
+.env
+.env.*
+!env.example
+.venv*
+.git
+data

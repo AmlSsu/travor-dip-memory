@@ -1,0 +1,15 @@
+{
+  "AE_ADD_INDEXER": "0",
+  "AE_CONTEXT_CHARS": "24000",
+  "AE_EMBEDDING_BACKEND": "dashscope",
+  "AE_EMBEDDING_BATCH_SIZE": "10",
+  "AE_EMBEDDING_DIMENSIONS": "1024",
+  "AE_EMBEDDING_MAX_ATTEMPTS": "3",
+  "AE_EMBEDDING_MAX_REQUESTS": "0",
+  "AE_EMBEDDING_TIMEOUT": "60",
+  "AE_EMBEDDING_URL": "https://ws-ey7b9mpcdp5trp4u.cn-beijing.maas.aliyuncs.com/api/v1/services/embeddings/text-embedding/text-embedding",
+  "AE_LOCAL_EVIDENCE_EXPAND": "0",
+  "AE_LOCAL_EVIDENCE_SEARCH": "0",
+  "AE_MODE": "query_document_block_graph",
+  "AE_PLANNER": "0"
+}

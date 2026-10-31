@@ -1,3 +1,13 @@
+# travor‘s dip — 冻结图V4候选源码
+
+提交者：余付（AmlSsu），DataSpot。
+
+当前独立图候选的源码、固定模型配置、来源与完整改动披露位于 [releases/evidence-graph-v4-20261031](releases/evidence-graph-v4-20261031)。这是基于 exact 0.32.0 的 V4 原文块图派生实现。匹配官方 Smoke 已46/46完成、65.8854166667；完整本地最终答案验证尚未完成。Full实际POST、容量与预算仍待落实和最终确认。该发布分支固定候选源代码，不宣称已提交Full、通过永久性能门槛或替换incumbent。
+
+以下保留原仓库基线说明，供追溯历史；本候选请按上面的独立发布目录复现。
+
+---
+
 # travor‘s dip — Textual Memory 
 
 本仓库用于余付（GitHub: [AmlSsu](https://github.com/AmlSsu)）以个人身份参加

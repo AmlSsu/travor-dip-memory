@@ -1,0 +1,7 @@
+{$AE_DOMAIN} {
+    reverse_proxy memory:8000 {
+        transport http {
+            response_header_timeout 1800s
+        }
+    }
+}

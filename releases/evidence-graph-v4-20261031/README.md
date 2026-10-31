@@ -1,0 +1,31 @@
+# Direct original blocks graph V4 — submission source draft
+
+This release is derived from the exact SourceTrail / Context Weave 0.32.0 source, not an independent upstream project. Original implementation copyright and MIT license are retained in `implementation/LICENSE` and `implementation/PROVENANCE.md`. Submitter: 余付 (AmlSsu), DataSpot. Repository: https://github.com/AmlSsu/travor-dip-memory . This frozen source release is prepared for an exploratory Full, whose final POST, runtime capacity and budget remain pending. It does not claim a submitted Full or a qualified local accuracy improvement.
+
+## Active implementation
+
+`implementation/` contains exactly the 40 frozen files used by the V4 official Smoke. Only `adaptive_evidence/core.py` changes an existing file. `block_graph.py` and `block_selection.py` are new independent implementations. All other original files retain their exact bytes. The inherited README, compose, start scripts, version string and SHA256SUMS describe historical upstream releases; use this top-level document, public deployment profile and source-manifest for this candidate. Do not launch the inherited compose configuration as V4.
+
+V4 parses original same-source paragraph, continuous-list and fenced-block offsets. Edges encode heading-line ancestry and an immediately preceding colon introduction to a list. They express explicit source layout, never entity identity, factual relations, semantic coreference or event completion. Joint selection uses literal query coverage, source association and redundancy, renders original interval unions, and retains original source metadata and digest IDs. Anchors that cannot fit the frozen budget cause an exact32 fallback. Complete lists may consume the budget or be truncated by the platform's later Answer packing. Returning a complete Search block does not guarantee a complete Answer input.
+
+The ranker, embedding profile, 24,000-character response budget, original rule qualification and priority, and document-prior exact fallback are retained. The graph seed pool is 80; coefficients were frozen before development probing. No ColBERT, profile extraction, multi-round query, program memory, generative Add/Search, answer synthesis or benchmark answer lookup is enabled. The new graph is not a copy or a reproduction of the older 0.34 evidence_forest implementation. That method informed investigation, and its differently scored same-name deployments were not treated as identical.
+
+## Reproduce service configuration
+
+Use Python and `pip install -r implementation/requirements.txt` in an isolated environment. Export the fields in `env.public.example`; supply `MEMORY_API_KEY` and `DASHSCOPE_API_KEY` privately. Use a fresh, dedicated persistent database. From `implementation/`, launch `python -m uvicorn adaptive_evidence.api:app --host 127.0.0.1 --port 18402 --workers 1 --no-access-log` with the public profile present. Production TLS/reverse-proxy configuration and secrets are not redistributed. Do not use `AE_LOCAL_NO_AUTH` in production. Check `/health` for `search_strategy=query_document_block_graph`, `embedding=text-embedding-v4` and `llm=none`. The unchanged health package version says 0.32.0; the manifest identifies this derived V4 implementation.
+
+The service uses text-embedding-v4, 1024 dimensions. It has no generative LLM component; the evaluation platform owns Answer and Judge. This is disclosed explicitly rather than claiming a gpt-4o-mini call that does not occur. Textual only; this source does not accept multimodal content arrays. The official API Guide and Documentation govern the contract.
+
+## Contract and validation boundaries
+
+Local synthetic acceptance passed 31 checks for this source and separately for exact32: exact user_id isolation with same-user cross-session retrieval; persistence before HTTP 200; retry idempotency by user_id/request_id with conflict rejection; ordered data arrays, top_k bounds and empty-scope responses; original-source evidence with stable IDs and no query/option or gold-field answer injection. These local checks do not certify production capacity, cloud rate limits, all semantic irrelevance cases or multimodal support. Final public-endpoint acceptance remains pending.
+
+The first matching official V4 Smoke, teval_e9b7392e81fbc239, succeeded on 46/46 items at 65.8854166667 points on 2026-10-31. A single non-paired Smoke is not evidence of stable superiority over exact32 or other candidates. Development annotated packed-input coverage was 4 gains, 2 losses, 132 ties and 150 unannotated cases; it is not answer accuracy. The frozen full local four-arm 576-case comparison (2304 arm-items) has not run Answer/Judge for V4. No permanent performance gate or incumbent promotion is claimed. The user explicitly permits preparing an exploratory Full with this incomplete local validation and possible baseline regression; the actual Full POST requires separate specific confirmation.
+
+The prior V1/V2 complete experiments and V3 Smoke regressions remain recorded in the private research report. No higher-scoring ablation has been renamed the candidate. This source package contains no datasets, official questions, memories, model answers, gold labels, model weights, operational credentials or private logs.
+
+## Operation and integrity
+
+Full-scale storage, memory, uptime and embedding budget must be established before final submission. The current shared host has not been certified for Full. API bodies are not logged; task data and derived copies may only complete their current evaluation, must not train/tune/reconstruct datasets, and must be deleted within 30 days after terminal completion unless the platform approves otherwise. Never delete another user's data, lock, or process. A first accepted Full freezes the version and disables further Smoke; it cannot be withdrawn or replaced merely for a lower score. Public-board release remains subject to organizer review.
+
+The original frozen source archive is `frozen-source.zip`. Its SHA-256 is 241e4e71885e097e2219119569314775b6df28c25bc7243056647da0bf51de6a. Use it if a Git client changes line endings; all 40 source files, including inherited historical files, can be checked against source-manifest.json.
